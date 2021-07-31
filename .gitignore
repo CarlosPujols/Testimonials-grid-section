@@ -1,4 +1,4 @@
-# Avoid accidental Sketch file upload 
+# Avoid accidental Sketch file upload
 ###############################################
 ## Please do not remove line 5 - thanks! 🙂 ##
 ###############################################
@@ -15,3 +15,10 @@
 .DS_Store
 
 .prettierignore
+
+readme-template.md
+style-guide.md
+readme.md
+design
+images
+.vscode
