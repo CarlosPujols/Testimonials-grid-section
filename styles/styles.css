@@ -3,20 +3,22 @@ body {
   margin: 0;
   font-family: 'Barlow Semi Condensed', sans-serif;
   background: hsl(210, 46%, 95%);
+  color: hsl(0, 0%, 100%);
 }
 
-.section-container{
+.section-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-areas:
   "comment-1 comment-1 comment-2 comment-5"
   "comment-3 comment-4 comment-4 comment-5";
   grid-gap: 36px;
-  max-width: 80%;
-  margin-top: 128px;
-  margin-bottom: 128px;
+  max-width: 85%;
+  margin-top: 64px;
+  margin-bottom: 64px;
   margin-left: auto;
   margin-right: auto;
+  grid-template-rows: repeat(2, 340px);
 
 }
 
@@ -26,33 +28,80 @@ body {
   background: #C0C0C0;
 }
 
-.avatar-image {
-  width: 56px;
-  height: 56px;
+.comment-card p {
+  opacity: 70%;
+  font-weight: 400;
+}
+
+.graduate-info {
+  padding: 4px;
+  display: grid;
+  grid-template-columns: 34px auto;
+  grid-gap: 16px;
+}
+
+.avatar {
+  grid-column: 1 / 2;
+}
+
+.avatar img {
   border-radius: 50%;
+  width: 30px;
+  margin-top: 4px;
+  border: 2px solid hsla(360, 100%, 100%, 0.5);
+}
+
+.graduate-name {
+  grid-column: 2 / 3;
+  text-align: left;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.graduate-name h3,
+.graduate-name h2 {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+}
+
+.graduate-name h2 {
+  font-size: 16px;
+}
+
+.graduate-name h3 {
+  font-size: 12px;
+  opacity: 50%
 }
 
 .comment-card:nth-of-type(1){
   grid-area: comment-1;
+  background-color: hsl(263, 55%, 52%);
 
 }
 
 .comment-card:nth-of-type(2){
   grid-area: comment-2;
+  background-color: hsl(217, 19%, 35%);
 
 }
 
 .comment-card:nth-of-type(3){
   grid-area: comment-3;
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(217, 19%, 35%);
 
 }
 
 .comment-card:nth-of-type(4){
   grid-area: comment-4;
+  background-color: hsl(219, 29%, 14%);
 
 }
 
 .comment-card:nth-of-type(5){
   grid-area: comment-5;
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(217, 19%, 35%);
 
 }
