@@ -109,3 +109,23 @@ body {
   color: hsl(217, 19%, 35%);
 
 }
+
+@media (max-width: 375px) {
+  .section-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "comment-1"
+    "comment-2"
+    "comment-3"
+    "comment-4"
+    "comment-5";
+    grid-template-rows: auto;
+    grid-gap: 36px;
+    max-width: 90%;
+    margin-top: 64px;
+    margin-bottom: 64px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
